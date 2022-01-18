@@ -1,6 +1,6 @@
 package funprog.mower
 
-import funprog.playground.{East, North, South, West}
+import funprog.playground.{Cardinal, East, North, South, West}
 
 trait Rotation[A] {
   def leftRotation(a: A): A

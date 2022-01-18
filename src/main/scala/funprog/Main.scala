@@ -31,7 +31,8 @@ object Main extends App {
 
           val displayVehicle = cleanFieldInitial.mowers zip finalField.mowers
 
-          displayVehicle.foreach { case (v1, v2) => s"${v1.pos.show} => ${v2.pos.show}".loggingResult() }
+          println(displayVehicle)
+
       }
     case Failure(exception) => println(ErreurFichierInput.showError(exception.getMessage))
   }
